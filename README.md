@@ -4,12 +4,12 @@ This is a simple web-based game that tests your ability to identify colors. In t
 ## 🎮 How to Play
 To play the Color Guessing Game, follow these simple steps:
 
-🔸 Click on the "Start" button to begin the game.
-🔸 You will be shown a color for a brief period of time. Pay close attention to this color, as you will need to identify it later.
-🔸 After the color disappears, you will be shown a color selector. This color selector is called Coloris and is made by *Momo Bassit*. Use the selector to choose the color that you think matches the one you were shown.
-🔸 Click on the "Submit" button to see if your guess is correct.
-🔸 If your guess is correct, you will move on to the next level. If it is incorrect, you will be given the opportunity to try again.
-🔸 The game continues in this manner, with each level becoming increasingly difficult as the colors become more similar to each other. The game ends when you have correctly identified all of the colors or when you run out of attempts.
+- Click on the "Start" button to begin the game.
+- You will be shown a color for a brief period of time. Pay close attention to this color, as you will need to identify it later.
+- After the color disappears, you will be shown a color selector. This color selector is called Coloris and is made by *Momo Bassit*. Use the selector to choose the color that you think matches the one you were shown.
+- Click on the "Submit" button to see if your guess is correct.
+- If your guess is correct, you will move on to the next level. If it is incorrect, you will be given the opportunity to try again.
+- The game continues in this manner, with each level becoming increasingly difficult as the colors become more similar to each other. The game ends when you have correctly identified all of the colors or when you run out of attempts.
 
 ## 🖥️ Technical Details
 The Color Guessing Game was built using HTML, CSS, and JavaScript. The color selector used in the game is called Coloris and is made by *Momo Bassit*. This selector allows players to choose colors from a wide range of options, making it easier to find the exact shade they are looking for.
