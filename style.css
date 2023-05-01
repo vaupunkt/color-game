@@ -10,16 +10,7 @@ body {
 #randomColor {
     width: 50px;
     height: 50px;
-}
-
-main .clr-field button, #colorpicker input{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
-
-#colorpicker {
-    color: rgb(255, 204, 0);
+    display: none;
 }
 
 .difficulty {
@@ -40,8 +31,4 @@ main .clr-field button, #colorpicker input{
 #game {
     max-width: 500px;
     min-width: 200px;
-}
-
-#level button {
-    display: none;
 }

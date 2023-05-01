@@ -4,16 +4,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="scripts/script.js" defer></script>
+        <script src="scripts/script.js" type="module" defer></script>
         <link rel="stylesheet" href="style.css">
        
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-        
-        <!-- Coloris Copyright (c) 2021 Momo Bassit.-->
-        <link rel="stylesheet" href="coliris/coloris.min.css" />
-        <script src="coliris/coloris.min.js" defer></script>
+    
+        <script src="https://colorjs.io/dist/color.global.legacy.js"></script>
 
         <title>Guess the color</title>
     </head>
@@ -38,24 +36,49 @@
                     </div>
                 </div>
                 <div id="randomColor"></div>
-                <div id="difficulty1" class="difficulty">
-                    <div class="colorDiv">
-                        <div id="colorDiv1"></div><p id="colorCode1"></p>
-                    </div>
-                    <div class="colorDiv">
-                        <div id="colorDiv2"></div><p id="colorCode2"></p>
-                    </div>
-                    <div class="colorDiv">
-                        <div id="colorDiv3"></div><p id="colorCode3"></p>
+                <div id="level1" class="difficulty">
+                        <div class="colorDiv">
+                            <div id="colorDiv1"></div><p id="colorCode1"></p>
+                        </div>
+                        <div class="colorDiv">
+                            <div id="colorDiv2"></div><p id="colorCode2"></p>
+                        </div>
+                        <div class="colorDiv">
+                            <div id="colorDiv3"></div><p id="colorCode3"></p>
+                        </div>
+                </div>
+                <div id="level2" class="difficulty">
+                    <div id="colorpicker">
+                        <label for="color-picker">Color:</label>
+                        <input type="color" value="#5e1010" id="color-picker" />
                     </div>
                 </div>
-                <div id="difficulty2" class="difficulty">
-                    <div class="clr-field" id="colorpicker">
-                        <button type="button"></button>
-                        <input type="text" data-coloris>
+                <div id="level3" class="difficulty">
+                    <div id="inputContainer">
+                        <label for="redLevel3">Red </label>
+                        <input id="redLevel3" type="number" min="0" max="255">
+                        <label for="greenLevel3">Green </label>
+                        <input id="greenLevel3" type="number" min="0" max="255">
+                        <label for=" blueLevel3">Blue </label>
+                        <input id="blueLevel3" type="number" min="0" max="255">
                     </div>
-                    <button id="next">Next</button>
+                    <button id="nextButton">Next</button>
                 </div>
+            </div>
+            <div id="results">
+                <table id="resultTable">
+                    <thead>
+                        <tr>
+                            <th>Round</th>
+                            <th>Color</th>
+                            <th>Guess</th>
+                            <th>Accuracy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
             </div>
 
             
