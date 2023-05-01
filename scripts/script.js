@@ -1,4 +1,5 @@
 let red, blue, green, red1, blue1, green1, red2, blue2, green2, rgb, color1, color2;
+let fadeColor;
 let startButton = document.getElementById("startButton");
 let timer = document.getElementById("timer");
 let pointCounter = document.getElementById("pointCounter");
@@ -7,9 +8,10 @@ let gameColor = document.getElementById("randomColor");
 var colordiv1 = document.getElementById('colorDiv1');
 var colordiv2 = document.getElementById('colorDiv2');
 var colordiv3 = document.getElementById('colorDiv3');
-let seconds = 0;
+let seconds = 11;
 let points = 0;
 let arrChoices = [];
+let arrColors = [];
 
 startButton.addEventListener("click", start);
 colordiv1.addEventListener("click", function() {
@@ -62,38 +64,36 @@ function start() {
 
   // changing seconds every 1000 milliseconds (=1Second)
   let intervalId = setInterval(() => {
-    seconds++;
+    seconds--;
     timer.innerHTML = seconds;
-    if (seconds == 11) {
+    if (seconds == -1) {
       clearInterval(intervalId);
       seconds = 0;
       timer.innerHTML = seconds;
       startButton.disabled = false;
     }
   }, 1000);
+  
   game();
 }
 
 function game() {
-    getRandomColor();
-    difficulty1();
-    /* play Sound
-    const clickSound = new Audio('click-sound.mp3');
-    clickSound.play();
-    */
+  getRandomColor();
+
+  
+  difficulty1();
 
   }
 
   function fadeColorBox() {
-    var fadeColor;
     clearInterval(fadeColor);
-    gameColor.style.opacity = 1;
     fadeColor = setInterval(function() {
       if (!gameColor.style.opacity) {
         gameColor.style.opacity = 1;
     }
     if (gameColor.style.opacity > 0) {
         gameColor.style.opacity -= 0.05;
+        console.log(gameColor.style.opacity);
     } else {
         clearInterval(fadeColor);
     }
@@ -101,16 +101,17 @@ function game() {
   }
 
   function difficulty1() {
-    setTimeout(fadeColorBox(), 1500);
+  gameColor.style.opacity = 1;
+  clearInterval(fadeColor);
+  setTimeout(fadeColorBox, 500);
 
-    do {
+  do {
     const randomRangeMin = (70);
     const randomRangeMax = (130);
 
     red1 =  Math.floor(red * (Math.random() * (randomRangeMax - randomRangeMin) + randomRangeMin )/100);
     green1 = Math.floor(green * (Math.random() * (randomRangeMax - randomRangeMin) + randomRangeMin )/100);     
     blue1 = Math.floor(blue * (Math.random() * (randomRangeMax - randomRangeMin) + randomRangeMin )/100);
-      
     red2 =  Math.floor(red * (Math.random() * (randomRangeMax - randomRangeMin) + randomRangeMin )/100);
     green2 = Math.floor(green * (Math.random() * (randomRangeMax - randomRangeMin) + randomRangeMin )/100);     
     blue2 = Math.floor(blue * (Math.random() * (randomRangeMax - randomRangeMin) + randomRangeMin )/100);
@@ -118,7 +119,7 @@ function game() {
     color1 = "rgb("+red1+", "+green1+", "+blue1+")";
     color2 = "rgb("+red2+", "+green2+", "+blue2+")";
 
-    } while (rgb === color1 | rgb === color2 | color1 === color2);
+  } while (rgb === color1 | rgb === color2 | color1 === color2);
     
     arrChoices = [rgb, color1, color2]
     arrChoices.sort(() => Math.random() - 0.5);
@@ -140,5 +141,6 @@ function game() {
   }
 
   function difficulty2() {
-
+    let next = document.getElementById("next");
+    
   }
