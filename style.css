@@ -4,6 +4,7 @@
 
 body {
     padding: 10px;
+    max-width: 500px;
 }
 
 #randomColor {
@@ -21,7 +22,7 @@ main .clr-field button, #colorpicker input{
     color: rgb(255, 204, 0);
 }
 
-#difficulty1 {
+.difficulty {
     display: flex;
     justify-content: space-around;
 }
@@ -34,4 +35,13 @@ main .clr-field button, #colorpicker input{
     display: flex;
     text-align: center;
     justify-content: space-evenly;
+}
+
+#game {
+    max-width: 500px;
+    min-width: 200px;
+}
+
+#level button {
+    display: none;
 }
