@@ -19,24 +19,23 @@
         <h1>Guess the Color</h1>
         <main>
             <div id="start">
-                <button id="startButton">Start Game</button>
                 <div id="level">
                     <button id="level1">Level 1</button>
                     <button id="level2">Level 2</button>
                     <button id="level3">Level 3</button>
                 </div>
             </div>
-            <div id="game">
-                <div id="status">
-                    <div id="time">
-                        <p>Timer</p><p id="timer">0</p>
-                    </div>
-                    <div id="points">
-                        <p>Points</p><p id="pointCounter">0</p>
-                    </div>
+            <div id="status">
+                <div id="time">
+                    <p>Timer</p><p id="timer">0</p>
                 </div>
+                <div id="points">
+                    <p>Points</p><p id="pointCounter">0</p>
+                </div>
+            </div>
+            <div id="game">
                 <div id="randomColor"></div>
-                <div id="level1" class="difficulty">
+                <div id="level1div" class="difficulty">
                         <div class="colorDiv">
                             <div id="colorDiv1"></div><p id="colorCode1"></p>
                         </div>
@@ -47,32 +46,32 @@
                             <div id="colorDiv3"></div><p id="colorCode3"></p>
                         </div>
                 </div>
-                <div id="level2" class="difficulty">
+                <div id="level2div" class="difficulty">
                     <div id="colorpicker">
-                        <label for="color-picker">Color:</label>
+                        <label for="color-picker">Pick the right Color: </label>
                         <input type="color" value="#5e1010" id="color-picker" />
                     </div>
                 </div>
-                <div id="level3" class="difficulty">
+                <div id="level3div" class="difficulty">
                     <div id="inputContainer">
-                        <label for="redLevel3">Red </label>
+                        <label for="redLevel3">Red: </label>
                         <input id="redLevel3" type="number" min="0" max="255">
-                        <label for="greenLevel3">Green </label>
+                        <label for="greenLevel3">Green: </label>
                         <input id="greenLevel3" type="number" min="0" max="255">
-                        <label for=" blueLevel3">Blue </label>
+                        <label for=" blueLevel3">Blue: </label>
                         <input id="blueLevel3" type="number" min="0" max="255">
                     </div>
                     <button id="nextButton">Next</button>
                 </div>
             </div>
             <div id="results">
-                <table id="resultTable">
+                <table id="resultTable" class="table table-hover">
                     <thead>
                         <tr>
-                            <th>Round</th>
-                            <th>Color</th>
-                            <th>Guess</th>
-                            <th>Accuracy</th>
+                            <th scope="col">Round</th>
+                            <th scope="col">Color</th>
+                            <th scope="col">Guess</th>
+                            <th scope="col">Accuracy</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -80,8 +79,6 @@
                     </tbody>
                 </table>
             </div>
-
-            
         </main>
     </body>
     <footer>
