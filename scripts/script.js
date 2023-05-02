@@ -207,7 +207,7 @@ colordiv2.addEventListener("click", () => {
         var cell1 = newRow.insertCell(1);
         cell1.style.backgroundColor = rgb;
         var cell2 = newRow.insertCell(2);
-        cell2.style.backgroundColor = arrChoices[0];
+        cell2.style.backgroundColor = arrChoices[1];
         var cell3 = newRow.insertCell(3);
         cell3.innerHTML = "100%";
       } else {
@@ -217,7 +217,7 @@ colordiv2.addEventListener("click", () => {
         var cell1 = newRow.insertCell(1);
         cell1.style.backgroundColor = rgb;
         var cell2 = newRow.insertCell(2);
-        cell2.style.backgroundColor = arrChoices[0];
+        cell2.style.backgroundColor = arrChoices[1];
         var cell3 = newRow.insertCell(3);
         cell3.innerHTML = "0%";
       }
@@ -237,7 +237,7 @@ colordiv3.addEventListener("click", () => {
       var cell1 = newRow.insertCell(1);
       cell1.style.backgroundColor = rgb;
       var cell2 = newRow.insertCell(2);
-      cell2.style.backgroundColor = arrChoices[0];
+      cell2.style.backgroundColor = arrChoices[2];
       var cell3 = newRow.insertCell(3);
       cell3.innerHTML = "100%";
     } else {
@@ -247,7 +247,7 @@ colordiv3.addEventListener("click", () => {
       var cell1 = newRow.insertCell(1);
       cell1.style.backgroundColor = rgb;
       var cell2 = newRow.insertCell(2);
-      cell2.style.backgroundColor = arrChoices[0];
+      cell2.style.backgroundColor = arrChoices[2];
       var cell3 = newRow.insertCell(3);
       cell3.innerHTML = "0%";
     }
