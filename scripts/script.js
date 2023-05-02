@@ -165,6 +165,8 @@ function startLevel3() {
 
 colordiv1.addEventListener("click", () => {
     rounds++;
+    console.log(rgb);
+    console.log(arrChoices);
     if (seconds > 0) {
       if (arrChoices[0] == rgb) {
         points++;
@@ -304,9 +306,9 @@ function level1() {
     } while (rgb === color1 | rgb === color2 | color1 === color2);
       
     arrChoices = [rgb, color1, color2]
-    arrChoices.sort(() => Math.random() - 0.5);
+    const shuffeldArray = arrChoices.sort((a, b) => 0.5 - Math.random());
+    arrChoices = shuffeldArray;
 
-    console.log(arrChoices);
     colordiv1.style.backgroundColor = arrChoices[0];
     colordiv1.style.width = '50px';
     colordiv1.style.height = '50px';
