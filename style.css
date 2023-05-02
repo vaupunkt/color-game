@@ -2,6 +2,16 @@
     font-family: Verdana
 }
 
+@media screen and (max-width:400px) {
+    /* Bei jedem größeren Monitor kommen neue Regeln hinzu */
+    
+
+    #inputcontainer {
+        display: flex;
+        flex-direction: column;
+    }
+    }
+
 h1 {
     padding: 40px;
 }
@@ -46,13 +56,14 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 10px;
+    margin: 5px;
     width: 120px;
+    height: 90px;
     background-color: white;
     box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;}
 
 .colorDiv p {
-    font-size: x-small;
+    font-size: 0.45rem;
     margin: 0;
 }
 
@@ -92,7 +103,13 @@ main {
 }
 
 #level3div {
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+}
+
+#level3div div {
+    margin: 0px;
+    display: flex;
     align-items: center;
 }
 
