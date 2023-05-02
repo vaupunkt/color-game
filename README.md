@@ -1,31 +1,28 @@
-# 🎨 Color Guessing Game Readme
-This is a simple web-based game that tests your ability to identify colors. In this game, you will be shown a color for a brief period of time, and then you must select the same color from a color selector. This game is perfect for anyone who loves colors and wants to challenge their knowledge of them.
+# 🎨🕹️ Color Guessing Game README 🕹️🎨
 
-## 🎮 How to Play
-To play the Color Guessing Game, follow these simple steps:
+Welcome to the Color Guessing Game! This is a fun game where you can test your knowledge of colors and compete against yourself or your friends. This game has three different levels of difficulty, accessed through three buttons, each with its own unique challenge.
 
-- Click on the "Start" button to begin the game.
-- You will be shown a color for a brief period of time. Pay close attention to this color, as you will need to identify it later.
-- After the color disappears, you will be shown a color selector. This color selector is called Coloris and is made by *Momo Bassit*. Use the selector to choose the color that you think matches the one you were shown.
-- Click on the "Submit" button to see if your guess is correct.
-- If your guess is correct, you will move on to the next level. If it is incorrect, you will be given the opportunity to try again.
-- The game continues in this manner, with each level becoming increasingly difficult as the colors become more similar to each other. The game ends when you have correctly identified all of the colors or when you run out of attempts.
+## 🔴🟢🔵 LEVELS 🔵🟢🔴
 
-## 🖥️ Technical Details
-The Color Guessing Game was built using HTML, CSS, and JavaScript. The color selector used in the game is called Coloris and is made by *Momo Bassit*. This selector allows players to choose colors from a wide range of options, making it easier to find the exact shade they are looking for.
-You can find the repo for the selector here: https://github.com/mdbassit/Coloris
+### 1️⃣ LEVEL 1:
+In this level, you'll be given three different colors to choose from. Your task is to select the color that matches the color displayed on the screen. This level is a great way to get started and to warm up your color recognition skills.
 
-The game uses a random number generator to select the colors that players will be shown. This ensures that each game is different and that players cannot memorize the order in which colors are shown.
+### 2️⃣ LEVEL 2:
+This level is a bit more challenging, as you will have to use a color picker to select the correct color. The color picker allows you to choose from a wide range of colors, and you'll have to use your intuition to select the right one. For this level, we use the deltaE algorithm from Lea Verou and Chris Lilley to calculate the score.
 
-The game is optimized for desktop and mobile devices, making it easy to play on any device with an internet connection. It can be played in any modern web browser, including Google Chrome, Mozilla Firefox, Apple Safari, and Microsoft Edge.
+### 3️⃣ LEVEL 3:
+This is the most difficult level, as you will have to enter the red, blue, and green values of the color by yourself. This level requires a strong understanding of color theory, and it's a great way to challenge yourself and improve your skills. As with Level 2, I use the deltaE algorithm to calculate the score.
 
-## 🎉 Conclusion
-The Color Guessing Game is a fun and challenging game that tests your knowledge of colors. Whether you are a designer, artist, or simply someone who loves colors, this game is sure to keep you entertained for hours. So why not give it a try and see how well you can identify different colors?
+## 💯 SCORING SYSTEM 💯
 
-Note: This game is currently under development and is not yet complete. While you can visit the repository and view the code, please note that the game is not yet available for public play. I am working hard to ensure that the game is completed as soon as possible and that you can enjoy it to its fullest.
+For Levels 2 and 3, I use the deltaE algorithm to calculate the score. The deltaE algorithm is a color difference formula that takes into account the way the human eye perceives color. This algorithm was developed by Lea Verou and Chris Lilley, who are both experts in color theory and editors of the CSS Color specifications. You can learn more about the deltaE algorithm and how it works by visiting the link: https://colorjs.io/docs/color-difference.html.
 
-I appreciate your interest and patience as I work to make this game the best it can be. I will continue to update the repository on GitHub at https://github.com/vaupunkt/color-game with progress updates and new features as they become available.
+## 👋 GETTING STARTED 👋
 
-If you are interested in contributing to the development of the game, I welcome your input and feedback. Please feel free to visit the repository and contribute your ideas or suggestions. I value your contributions and will do my best to incorporate them into the game.
+To get started with the Color Guessing Game, simply click on the link to our Github repository: https://vaupunkt.github.io/color-game/. From there, you can clone or download the repository and start playing the game. The game is built using HTML, CSS, and JavaScript, and it's compatible with most modern web browsers.
 
-Thank you for your interest in the Color Guessing Game. I hope that it will be available for play soon and that you will enjoy playing it as much as I have enjoyed creating it. Stay tuned for updates and new features! 🎉🎨
+## 🌟 CREDITS 🌟
+
+The Color Guessing Game was developed by @vaupunkt. I would like to give special thanks to Lea Verou and Chris Lilley for developing the deltaE algorithm and making it available to the public. I would also like to thank the open-source community for their contributions and support.
+
+I hope you enjoy playing the Color Guessing Game! If you have any questions, comments, or feedback, please feel free to contact us.
